@@ -1,0 +1,33 @@
+//navbar
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;  
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.nav-link ul {
+    display: flex;
+    gap: 2rem;
+    color: #FF6060;
+    font-size: 1.5rem;
+    li:hover {
+        text-decoration: underline;
+        color: #FF6060; 
+    }
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-bottom: 0.5rem;
+    img {
+        object-fit: contain;
+    }
+}
