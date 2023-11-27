@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import banner from '../assets/bannière.png'
 import '../styles/Home.scss'
+import homeData from '../assets/logements.json'
 
 export default function Home() {
     const [width, setWidth] = useState(window.innerWidth) //hook changement d'état
@@ -24,6 +25,23 @@ export default function Home() {
                 <h1 className='banner-title'>Chez vous,<br></br> partout et ailleurs</h1>
             )}
         </div>
+        <section className='home-section'>
+            <div className='container'>
+                {homeData
+                .slice(0, 6) //afficher les image d'index 0 à 6
+                .map((home, index) => {
+                    return (
+                        <div className='home-card' key={home.id}>
+                            <a href={`/logements/${home.id}`}>
+                        <img src={home.cover} alt={home.title} />
+                        <p className='home-title'>{home.title}</p>
+                        </a>
+                        </div>
+                    )
+                })}
+            </div>
+
+        </section>
     </main>
   )
 }
