@@ -72,5 +72,10 @@ img {
             filter:drop-shadow(0  0 0.90rem #FF6060);
         } 
     }
+    .btn:hover {
+        text-decoration: underline;
+        color: #FF6060;
+        cursor: pointer;
+    }
 }
 
