@@ -17,3 +17,27 @@
         width: 90%;
     }
 }
+
+.description-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+.location {
+    color:#FF6060 ;
+    font-size: 2.2rem;
+}
+
+.owner {
+    color:#FF6060 ;
+    font-size: 1.5rem;
+}
+
+.gray-dot {
+    width: 64px;
+    height: 64px;
+    top: 567px;
+    left: 1273px;
+    color: #C4C4C4;
+}

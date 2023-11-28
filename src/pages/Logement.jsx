@@ -19,9 +19,13 @@ export default function Logement() {
       </div>
 
     <section className='description-container'>
-      <div className='location-owner'>
-
+      <div className='location'>
+        <p className='quartier'>{currentLogement.title}</p>
       </div>
+      <aside>
+        <p className='owner'>{currentLogement.host.name}</p>
+        <p className='gray-dot'></p>
+        </aside>
 
 
     </section> 
