@@ -10,10 +10,10 @@ export default function Navbar() {
         <div className='nav-link'>
             <ul>
                 <li>
-                    <a href='/'>Home</a>
+                    <a href='/'>Accueil</a>
                 </li>
                 <li>
-                    <a href='/about'>About</a>
+                    <a href='/about'>A propos</a>
                 </li>
 
                 

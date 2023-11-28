@@ -1,0 +1,19 @@
+.carrousel {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    @media  screen and  (max-width: 425px){
+        height: 10rem;
+    }
+}
+
+.photos {
+    width: 80%;
+    object-fit: cover;
+    height: 50vh;
+    border-radius: 1.5rem;
+    // filter: contrast(1.2) brightness(0.8);
+    @media  screen and  (max-width: 425px){
+        width: 90%;
+    }
+}
