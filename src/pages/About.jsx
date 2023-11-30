@@ -11,7 +11,7 @@ export default function About() {
           <p className='not-found'>Oups! La page que vous demandez n'existe pas</p>   
         </div>
         <div className='home-link'> 
-          <Link to='/home'>Retourner sur la page d'accueil</Link>
+          <Link to='/'>Retourner sur la page d'accueil</Link>
         </div>
         </section>
     </main>
