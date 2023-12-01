@@ -1,6 +1,7 @@
 import React from 'react'
 import "../styles/About.scss"
 import { Link } from 'react-router-dom'
+import Collapse from '../components/collapse'
 
 export default function About() {
   return (
