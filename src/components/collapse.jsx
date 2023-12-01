@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import vector from '../assets/flècheBas.png'
+import '../assets/flècheBas.png'
+import '../styles/Collapse.scss'
 
 const MenuDeroulant = ({title, content}) => {
     // j'utilise le state pour gérer l'état du menu
@@ -13,9 +14,9 @@ const MenuDeroulant = ({title, content}) => {
     return (
       <div className={`collapse-container ${open ? 'open' : ''}`}>
         {/* flèche pour activer/désactiver le menu */}
-        <div className='collapse-header' onClick={toggleMenu}>
+        <div className='collapse-header'>
             <h2>{title}</h2>
-          <img className="down-arrow" src={open ? vector : '../assets/flècheBas.png'} alt="flèche vers le bas"/>
+          <img className="down-arrow" onClick={toggleMenu} src={require('../assets/flècheBas.png').default} alt="flèche vers le bas"/>
         </div>
         
         <div>
