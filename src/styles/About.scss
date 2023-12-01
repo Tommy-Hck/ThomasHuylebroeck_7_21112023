@@ -1,0 +1,6 @@
+.banner {
+    height: 16rem;
+    @media  screen and  (max-width: 425px){
+        height: 10rem;
+    }
+}

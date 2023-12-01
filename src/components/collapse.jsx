@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import vector from '../assets/flècheBas.png'
 
-const MenuDeroulant = () => {
+const MenuDeroulant = ({title, content}) => {
     // j'utilise le state pour gérer l'état du menu
     const [open, setOpen] = useState(false);
   
@@ -11,18 +11,21 @@ const MenuDeroulant = () => {
     };
   
     return (
-      <div>
+      <div className={`collapse-container ${open ? 'open' : ''}`}>
         {/* flèche pour activer/désactiver le menu */}
-        <div onClick={toggleMenu}>
-          <img src={open ? vector : '../assets/flècheBas.png'} alt="flècheBas"/>
+        <div className='collapse-header' onClick={toggleMenu}>
+            <h2>{title}</h2>
+          <img className="down-arrow" src={open ? vector : '../assets/flècheBas.png'} alt="flèche vers le bas"/>
         </div>
-  
+        
+        <div>
         {/* le contenu du menu est rendu conditionnellement en fonction de l'état */}
         {open && (
-          <h1>
-            <p>Description</p>
-          </h1>
+          <div className="collapse-content">
+          <p>{content}</p>
+        </div>
         )}
+        </div>
       </div>
     );
   };
