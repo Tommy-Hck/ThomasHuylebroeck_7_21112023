@@ -7,7 +7,7 @@ export default function Error() {
     <main>
       <section  className='error-container'>
         <div className='error-content'>
-          <p  className='error'>404</p>
+          <h1  className='error'>404</h1>
           <p className='not-found'>Oups! La page que vous demandez n'existe pas</p>   
         </div>
         <div className='home-link'> 

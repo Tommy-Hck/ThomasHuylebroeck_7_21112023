@@ -16,10 +16,10 @@ const MenuDeroulant = ({title, content}) => {
         {/* flèche pour activer/désactiver le menu */}
         <div className='collapse-header'>
             <h2>{title}</h2>
-          <img className="down-arrow" onClick={toggleMenu} src={require('../assets/flècheBas.png').default} alt="flèche vers le bas"/>
+          <img className="up-arrow" onClick={toggleMenu} src={require('../assets/flècheBas.png').default} alt="flèche vers le bas"/>
         </div>
         
-        <div>
+        <div className="open-collapse">
         {/* le contenu du menu est rendu conditionnellement en fonction de l'état */}
         {open && (
           <div className="collapse-content">

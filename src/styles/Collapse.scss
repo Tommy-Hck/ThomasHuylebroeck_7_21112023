@@ -5,9 +5,22 @@
 }
 
 .collapse-header {
+    display:flex;
+    justify-content: space-between;
     background-color: #FF6060;
     width: 70%;
     border-radius: 5px;
+    margin: 15px;
+}
+
+.up-arrow {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+.open-collapse {
+    width: 65%;
 }
 
 h2{
@@ -16,5 +29,6 @@ h2{
 
 p{
     color: #FF6060;
+    font-size: 1.5rem;
 }
 
