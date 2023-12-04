@@ -4,17 +4,18 @@ import homeData from "../assets/logements.json";
 import "../styles/Logement.scss";
 import greyStar from "../assets/etoileGrise.png";
 import redStar from "../assets/etoileRouge.png";
-import Collapse from '../components/collapse'
+import Collapse from "../components/collapse";
 
 export default function Logement() {
   const { id } = useParams();
   const currentLogement = homeData.find((logement) => logement.id === id);
   console.log("id", id);
+
   if (!currentLogement) {
     return <Link to="/Error"></Link>;
   }
 
-  let array = ["1", "2", "3", "4", "5"];
+  let array = ["1", "2", "3", "4", "5", "6"];
 
   return (
     <main className="main">
@@ -62,11 +63,23 @@ export default function Logement() {
               ))}
             </div>
           </div>
-    
         </div>
         <div className="collapse">
-              <Collapse title={"description"} content={currentLogement.description}/>
-              <Collapse title={"Équipements"} content={currentLogement.equipements}/>
+          <Collapse
+            title={"description"}
+            content={currentLogement.description}
+          />
+
+          <Collapse
+            title={"Équipements"}
+            content={
+              <ul>
+                {currentLogement.equipments.map((equipment, index) => (
+                  <li key={index}>{equipment}</li>
+                ))}
+              </ul>
+            }
+          />
         </div>
       </section>
     </main>
