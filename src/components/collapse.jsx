@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import '../assets/flècheBas.png'
+import Arrow from '../assets/arrow.png'
 import '../styles/Collapse.scss'
 
 const MenuDeroulant = ({title, content}) => {
@@ -16,14 +16,20 @@ const MenuDeroulant = ({title, content}) => {
         {/* flèche pour activer/désactiver le menu */}
         <div className='collapse-header'>
             <h2>{title}</h2>
-          <img className="up-arrow" onClick={toggleMenu} src={require('../assets/flècheBas.png').default} alt="flèche vers le bas"/>
+            {open ? (
+              <img className="arrow" onClick={toggleMenu} src={Arrow} alt="flèche"/>
+            ):(
+              <img className="arrow-down" onClick={toggleMenu} src={Arrow} alt="flèche"/>
+            )  
+            }
+          
         </div>
         
         <div className="open-collapse">
         {/* le contenu du menu est rendu conditionnellement en fonction de l'état */}
         {open && (
           <div className="collapse-content">
-          <p>{content}</p>
+          <p className="colla^se-text">{content}</p>
         </div>
         )}
         </div>

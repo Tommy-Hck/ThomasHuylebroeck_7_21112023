@@ -7,16 +7,28 @@
 .collapse-header {
     display:flex;
     justify-content: space-between;
+    align-items: center;
     background-color: #FF6060;
     width: 70%;
     border-radius: 5px;
     margin: 15px;
+    padding: 0.7rem;
 }
 
-.up-arrow {
-    background-color: transparent;
+.arrow {
     cursor: pointer;
-    border: none;
+    width: 1.6rem;
+    height: 1.2rem;
+    object-fit: contain;
+    animation: inverso 0.5s forwards;
+}
+
+.arrow-down {
+    cursor: pointer;
+    width: 1.6rem;
+    height: 1.2rem;
+    object-fit: contain;
+    animation: rotate 0.5s forwards;
 }
 
 .open-collapse {
@@ -27,8 +39,30 @@ h2{
     color: white;
 }
 
-p{
+.collapse-text {
     color: #FF6060;
     font-size: 1.5rem;
+}
+
+//animation
+
+@keyframes rotate {
+    0% {
+    transform: rotate(0deg);
+    }
+    100% {
+    transform: rotate(180deg);
+    }
+    
+}
+
+@keyframes inverso {
+    0% {
+    transform: rotate(0deg);
+    }
+    100% {
+    transform: rotate(-180deg);
+    }
+    
 }
 
