@@ -13,11 +13,11 @@ export default function About() {
         </div>
       </section>
 
-       <section>
+       <section className='collapse-column'>
         {Data.map((rule) =>
           {
             return (
-              <Collapse title={rule.title} content={rule.content} key={rule.id}/>
+              <Collapse className="collapse" title={rule.title} content={rule.content} key={rule.id}/>
             )
           }
         )}

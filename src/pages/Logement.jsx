@@ -65,15 +65,15 @@ export default function Logement() {
           </div>
         </div>
         <div className="collapse">
-          <Collapse
-            title={"description"}
+          <Collapse className="Description-title"
+            title={"Description"}
             content={currentLogement.description}
           />
 
-          <Collapse
+          <Collapse className="equipements-title"
             title={"Équipements"}
             content={
-              <ul>
+              <ul className="equipement-list">
                 {currentLogement.equipments.map((equipment, index) => (
                   <li key={index}>{equipment}</li>
                 ))}
