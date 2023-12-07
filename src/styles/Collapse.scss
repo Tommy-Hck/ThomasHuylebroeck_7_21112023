@@ -5,7 +5,7 @@
     background-color: #FF6060;
     border-radius: 5px;
     // margin: 15px;
-    padding: 0.7rem;
+    padding: 0.6rem;
     @media  screen and  (max-width: 425px){
         padding: 0 2rem;
         font-size: 0.8rem;
@@ -14,7 +14,6 @@
 
 
 .collapse-container {
-    width: 65%;
     margin-bottom: 2rem;
     @media  screen and  (max-width: 425px){
         width: 90%;
@@ -45,9 +44,13 @@ h2{
     color: white;
 }
 
+.collapse-content {
+    max-width: 80rem;
+}
+
 .collapse-text {
     color: #FF6060;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 //animation

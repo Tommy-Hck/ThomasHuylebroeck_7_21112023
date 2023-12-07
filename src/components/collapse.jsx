@@ -29,7 +29,7 @@ const MenuDeroulant = ({title, content}) => {
         {/* le contenu du menu est rendu conditionnellement en fonction de l'état */}
         {open && (
           <div className="collapse-content">
-          <p className="colla^se-text">{content}</p>
+          <p className="collapse-text">{content}</p>
         </div>
         )}
         </div>

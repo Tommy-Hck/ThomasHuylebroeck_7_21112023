@@ -1,5 +1,5 @@
 import React from 'react'
-import Banner from '../assets/banniereAbout.png'
+import Banner from '../assets/kalen-emsley-Bkci_8qcdvQ-unsplash 2 (1).png'
 import "../styles/About.scss"
 import Collapse from '../components/collapse'
 import Data from '../assets/about.json'
@@ -9,7 +9,7 @@ export default function About() {
     <main>
       <section>
         <div   className='banner'>
-          <img src={Banner} alt='bannière'/>
+          <img className='image' src={Banner} alt='bannière'/>
         </div>
       </section>
 
@@ -17,7 +17,7 @@ export default function About() {
         {Data.map((rule) =>
           {
             return (
-              <Collapse className="collapse" title={rule.title} content={rule.content} key={rule.id}/>
+              <Collapse className="collapse" title={<div className='collapse-title'>{rule.title}</div>} content={<div className='collapse-content'>{rule.content}</div>} key={rule.id}/>
             )
           }
         )}
