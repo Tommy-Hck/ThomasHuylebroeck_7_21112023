@@ -4,73 +4,124 @@
     position: relative;
     @media  screen and  (max-width: 425px){
         height: 10rem;
+        width: 20rem;
+        padding-bottom: 50%;
     }
 }
 
 .photos {
     width: 100%;
     object-fit: cover;
-    height: 50vh;
+    height: 20rem;
     border-radius: 1.5rem;
     // filter: contrast(1.2) brightness(0.8);
     @media  screen and  (max-width: 425px){
-        width: 90%;
+        width: 19.2rem;
     }
 }
 
+// .description-container {
+//     @media  screen and  (max-width: 425px){
+//         display: flex;
+//         flex-direction: column;
+//     }
+//     }
+.description-container {
+    display: flex;
+    flex-direction: column;
+}
+  @media (max-width: 425px) {
+    .description-container {
+      flex-direction: row;
+    }
+  
+    .taga {
+      order: 2;
+    }
+  
+    .host {
+      order: 1;
+    }
+  }
+
+    
 .location {
     color:#FF6060 ;
     display: flex;
     justify-content: space-between;
+    @media  screen and  (max-width: 425px){
+    }
 }
 
 .host {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    @media  screen and  (max-width: 425px){
+        justify-content: right;
+    }
 }
 
 .owner {
     color:#FF6060 ;
     font-size: 1.5rem;
-    width: 6rem;
+    width: 10rem;
     text-align: right;
+    @media  screen and  (max-width: 425px){
+        font-size: 1rem;
+        width: 5rem;
+    }
 }
 
 .host-picture {
     border-radius: 50%;
     width: 4.5rem;
     height: 4.5rem;
+    @media  screen and  (max-width: 425px){
+        width: 3rem;
+        height: 3rem;
+    }
 }
 
 .main {
     padding: 0 10%;
+    @media  screen and  (max-width: 425px){
+        padding: 0 7%;;
+    }
 }
 
 .quartier {
     margin-top: 1rem;
     font-size: 2.2rem;
     font-weight: 400;
+    @media  screen and  (max-width: 425px){
+        font-size: 1.3rem;;
+        font-weight: 500;
+    }
 }
 
 .city {
     margin: 0%;
     font-size: 1.2rem;
+    @media  screen and  (max-width: 425px){
+        display: flex;
+        flex-direction: column;
+        font-size:  1rem;
+        padding: 0.5rem 0;
+    }
+}
+
+.tag-container {
+    @media  screen and  (max-width: 425px){
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .tag-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.tag {
-    width: 100%;
-    font-weight: bold;
-    color: white;
-    background-color: #FF6060;
-    padding: 0.3rem;
-    border-radius: 10px;
 }
 
 .taga {
@@ -82,18 +133,34 @@
         background-color: #FF6060;
         border-radius: 10px;
         text-align: center;
+        @media  screen and  (max-width: 425px){
+            padding: 0.2rem 0.5rem;
+        }
     }
 }
 
 .star {
     width: 2rem;
     height: 2rem;
+    @media  screen and  (max-width: 425px){
+    }
 }
 
 .collapse {
     display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+    @media  screen and  (max-width: 425px){
+        flex-direction: column;
+    }
 }
 
-.description-title {
-    margin-left: 2rem;
+h2 {
+    font-size: 1.5rem;
+    width: 35vw;
+}
+
+.description-content, .equipement-list {
+    font-size: 1.2rem;
+    max-width: 35vw;
 }

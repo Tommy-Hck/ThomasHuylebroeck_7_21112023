@@ -39,4 +39,15 @@ footer {
     img {
         object-fit: contain;
     }
+    
+    @media  screen and  (max-width: 425px){
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         line-height: 0rem;
+         .footer-text {
+            padding-bottom: 2rem;
+            margin: 0;
+         }
+    }
 }

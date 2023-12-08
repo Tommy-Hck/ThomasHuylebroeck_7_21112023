@@ -29,7 +29,7 @@ export default function Logement() {
 
       <section className="description-container">
         <div className="location">
-          <div>
+          <div className="city">
             <h1 className="quartier">{currentLogement.title}</h1>
             <p className="city">{currentLogement.location}</p>
           </div>
@@ -42,10 +42,10 @@ export default function Logement() {
             />
           </div>
         </div>
-        <div className="main-tag">
+        <div
+         className="main-tag">
           <div className="tag-container">
             <div className="taga">
-              {/* Tags rendering */}
               {currentLogement.tags.map((tag) => (
                 <span key={tag.length}>{tag}</span>
               ))}
@@ -66,12 +66,12 @@ export default function Logement() {
         </div>
         <div className="collapse">
           <Collapse className="title Description-title"
-            title={"Description"}
-            content={currentLogement.description}
+            title={<h2>Description</h2>}
+            content={<div className="description-content">{currentLogement.description}</div>}
           />
 
           <Collapse className="title equipements-title"
-            title={"Équipements"}
+            title={<h2>Équipements</h2>}
             content={
               <ul className="equipement-list">
                 {currentLogement.equipments.map((equipment, index) => (

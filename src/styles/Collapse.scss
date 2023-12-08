@@ -4,8 +4,7 @@
     align-items: center;
     background-color: #FF6060;
     border-radius: 5px;
-    // margin: 15px;
-    padding: 0.6rem;
+    padding: 0.5rem;
     @media  screen and  (max-width: 425px){
         padding: 0 2rem;
         font-size: 0.8rem;
@@ -26,6 +25,7 @@
     height: 1.2rem;
     object-fit: contain;
     animation: inverso 0.5s forwards;
+    margin-right: 0.5rem;
 }
 
 .arrow-down {
@@ -34,23 +34,19 @@
     height: 1.2rem;
     object-fit: contain;
     animation: rotate 0.5s forwards;
-}
-
-.open-collapse {
-    width: 65%;
+    margin-right: 0.5rem;
 }
 
 h2{
     color: white;
 }
 
-.collapse-content {
-    max-width: 80rem;
-}
-
 .collapse-text {
     color: #FF6060;
     font-size: 1.8rem;
+    @media  screen and  (max-width: 425px){
+        font-size: 0.9rem;
+    }
 }
 
 //animation

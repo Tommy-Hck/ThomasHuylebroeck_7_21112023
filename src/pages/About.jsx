@@ -17,7 +17,7 @@ export default function About() {
         {Data.map((rule) =>
           {
             return (
-              <Collapse className="collapse" title={<div className='collapse-title'>{rule.title}</div>} content={<div className='collapse-content'>{rule.content}</div>} key={rule.id}/>
+              <Collapse className="collapse" title={<h2 className='collapse-title'>{rule.title}</h2>} content={rule.content} key={rule.id}/>
             )
           }
         )}
