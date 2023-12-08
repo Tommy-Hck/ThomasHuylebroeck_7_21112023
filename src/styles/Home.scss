@@ -95,6 +95,11 @@ img {
         text-decoration: underline;
         color: #FF6060;
         cursor: pointer;
+        @media  screen and  (max-width: 425px){
+            font-size: 1.5rem;
+            align-self: center;
+            padding-bottom: 2rem;
+        }
     }
 }
 

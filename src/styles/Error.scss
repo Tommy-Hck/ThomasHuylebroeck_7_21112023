@@ -17,7 +17,13 @@
 }
 
 .not-found {
-    font-size: 3rem;
+    font-size: 2.7rem;
+    color: #FF6060;
+    @media  screen and  (max-width: 425px){
+        padding: 0 14%;
+        font-size: 1.5rem;
+        color: #FF6060;
+    }
 }
 
 .home-link {
@@ -30,7 +36,7 @@
 
     @media  screen and  (max-width: 425px){
         font-size: 3.5vw;
-        font-weight: bold;
         text-wrap: nowrap;
+        text-decoration: underline;
     }
 }
