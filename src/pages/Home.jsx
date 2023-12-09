@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import banner from '../assets/bannière.png'
 import '../styles/Home.scss'
 import homeData from '../assets/logements.json'
+import '../styles/Banner.scss'
 
 export default function Home() {
     const [width, setWidth] = useState(window.innerWidth) //hook changement d'état
@@ -20,7 +21,7 @@ export default function Home() {
   return (
     <main>
         <div className='banner'>
-            <img src={banner} alt='bannière'/>
+            <img className='banner-picture' src={banner} alt='bannière'/>
             {width > 425 ? (     //rendu conditionnel if/else
                 <h1 className='banner-title'>Chez vous, partout et ailleurs</h1>
             ) : (
@@ -37,7 +38,7 @@ export default function Home() {
                     return (
                         <div className='home-card' key={home.id}>
                             <a href={`/logements/${home.id}`}>
-                        <img src={home.cover} alt={home.title} />
+                        <img className='logement-picture' src={home.cover} alt={home.title} />
                         <p className='home-title'>{home.title}</p>
                         </a>
                         </div>
@@ -53,7 +54,7 @@ export default function Home() {
                     return (
                         <div className='home-card' key={home.id}>
                             <a href={`/logements/${home.id}`}>
-                        <img src={home.cover} alt={home.title} />
+                        <img className='logement-picture' src={home.cover} alt={home.title} />
                         <p className='home-title'>{home.title}</p>
                         </a>
                         </div>

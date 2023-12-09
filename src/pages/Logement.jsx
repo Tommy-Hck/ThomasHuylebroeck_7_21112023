@@ -15,7 +15,7 @@ export default function Logement() {
     return <Link to="/Error"></Link>;
   }
 
-  let array = ["1", "2", "3", "4", "5", "6"];
+  let array = [1, 2, 3, 4, 5];
 
   return (
     <main className="main">
@@ -28,8 +28,8 @@ export default function Logement() {
       </div>
 
       <section className="description-container">
-        <div className="location">
-          <div className="city">
+        <div className="info">
+          <div className="city-aera">
             <h1 className="quartier">{currentLogement.title}</h1>
             <p className="city">{currentLogement.location}</p>
           </div>
@@ -41,37 +41,38 @@ export default function Logement() {
               alt="hôte"
             />
           </div>
-        </div>
-        <div
-         className="main-tag">
-          <div className="tag-container">
-            <div className="taga">
-              {currentLogement.tags.map((tag) => (
-                <span key={tag.length}>{tag}</span>
-              ))}
-            </div>
+          <div className="taga">
+            {currentLogement.tags.map((tag) => (
+              <span key={tag.length}>{tag}</span>
+            ))}
+          </div>
 
-            <div className="rating-container">
-              {/* Rating stars rendering */}
-              {array.map((index) => (
-                <img
-                  key={index}
-                  className="star"
-                  src={index <= currentLogement.rating ? redStar : greyStar}
-                  alt="star"
-                />
-              ))}
-            </div>
+          <div className="rating-container">
+            {/* Rating stars rendering */}
+            {array.map((index) => (
+              <img
+                key={index}
+                className="star"
+                src={index <= currentLogement.rating ? redStar : greyStar}
+                alt="star"
+              />
+            ))}
           </div>
         </div>
         <div className="collapse">
-          <Collapse className="title Description-title"
-            title={<h2>Description</h2>}
-            content={<div className="description-content">{currentLogement.description}</div>}
+          <Collapse
+            className="title Description-title"
+            title={<h2 className="title">Description</h2>}
+            content={
+              <div className="description-content">
+                {currentLogement.description}
+              </div>
+            }
           />
 
-          <Collapse className="title equipements-title"
-            title={<h2>Équipements</h2>}
+          <Collapse
+            className="title equipements-title"
+            title={<h2 className="title">Équipements</h2>}
             content={
               <ul className="equipement-list">
                 {currentLogement.equipments.map((equipment, index) => (

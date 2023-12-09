@@ -6,7 +6,7 @@
     align-items: center;  
     padding:0 10%;
     @media  screen and  (max-width: 425px){
-        height: 10rem;
+        height: 3.5rem;
         align-items: start;
     }
 }
@@ -32,8 +32,10 @@ img {
         color: #FF6060; 
     }
     @media  screen and  (max-width: 430px){
+        padding: 0 1.8rem;
         font-size: 0.9rem;
-        width: 80%;
+        font-weight: 400;
+        width: 59%;
 }
 }
 
@@ -42,10 +44,12 @@ footer {
     color: white;
     text-align: center;
     padding-bottom: 0.5rem;
+    @media  screen and  (max-width: 425px){
+        padding: 8% 0;
+    }
     img {
         object-fit: contain;
         @media  screen and  (max-width: 425px){
-            padding: 5% 5%;
         }
     }
     
@@ -54,7 +58,7 @@ footer {
          flex-direction: column;
          align-items: center;
          .footer-text {
-            padding-bottom: 1rem;
+            padding: 1rem;
             margin: 0;
          }
     }

@@ -14,44 +14,39 @@
     object-fit: cover;
     height: 20rem;
     border-radius: 1.5rem;
-    // filter: contrast(1.2) brightness(0.8);
     @media  screen and  (max-width: 425px){
         width: 19.2rem;
     }
 }
 
-// .description-container {
-//     @media  screen and  (max-width: 425px){
-//         display: flex;
-//         flex-direction: column;
-//     }
-//     }
 .description-container {
     display: flex;
     flex-direction: column;
 }
   @media (max-width: 425px) {
     .description-container {
-      flex-direction: row;
+      flex-direction: column
     }
   
     .taga {
-      order: 2;
+      order: 1;
     }
   
     .host {
-      order: 1;
+      order: 3;
+    }
+
+    .rating-container {
+        order: 2;
     }
   }
 
-    
-.location {
-    color:#FF6060 ;
+  .info {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    @media  screen and  (max-width: 425px){
-    }
-}
+  }
+
 
 .host {
     display: flex;
@@ -100,21 +95,22 @@
     }
 }
 
+.city-aera {
+    display: flex;
+    flex-direction: column;
+    color:#FF6060 ;
+    width: 50%;
+    @media  screen and  (max-width: 425px){
+    width: 100%;
+    }
+}
+
 .city {
     margin: 0%;
     font-size: 1.2rem;
     @media  screen and  (max-width: 425px){
-        display: flex;
-        flex-direction: column;
         font-size:  1rem;
         padding: 0.5rem 0;
-    }
-}
-
-.tag-container {
-    @media  screen and  (max-width: 425px){
-        display: flex;
-        flex-direction: column;
     }
 }
 
@@ -122,17 +118,24 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media  screen and  (max-width: 425px){
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .taga {
     display: flex;
     gap: 1rem;
+    width: 50%;
+    @media  screen and  (max-width: 425px){
+        width: 100%;
+    }
     span {
         color: white;
         padding: 0.2rem 2rem;
         background-color: #FF6060;
         border-radius: 10px;
-        text-align: center;
         @media  screen and  (max-width: 425px){
             padding: 0.2rem 0.5rem;
         }
@@ -155,7 +158,13 @@
     }
 }
 
-h2 {
+.collapse-container {
+    @media  screen and  (max-width: 425px){
+
+    }
+}
+
+.title {
     font-size: 1.5rem;
     width: 35vw;
 }
