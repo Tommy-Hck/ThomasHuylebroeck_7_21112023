@@ -1,3 +1,9 @@
 * {
     font-family: "Montserrat", sans-serif;
 }
+
+body {
+    @media screen {
+        min-width: 320px;
+    }
+}

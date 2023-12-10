@@ -30,9 +30,7 @@ export default function Home() {
         </div>
         <section className='home-section'>
 
-                    {/* possibilité d'appliquer un slice pour n'afficher que 6 logements avec l'utilisation d'un bouton voir plus/voir moins */}
-
-            {/* {isShow === false ? (
+            {isShow === false ? (
                 <div className='container'>
                 {homeData
                 .slice(0, 6) //afficher les image d'index 0 à 6
@@ -49,7 +47,7 @@ export default function Home() {
                 <span className='btn btn-more'onClick={() => setIsShow(true)}>voir plus</span>
                 
             </div>
-            ):( */}
+            ):(
                 <div className='container'>
                 {homeData
                 .map((home, index) => {
@@ -62,9 +60,9 @@ export default function Home() {
                         </div>
                     )
                 })}
-                {/* <span className='btn btn-less' onClick={() => setIsShow(false)}>voir moins</span> */}
+                <span className='btn btn-less' onClick={() => setIsShow(false)}>voir moins</span>
             </div>
-            {/* )} */}
+            )}
         
             
 
