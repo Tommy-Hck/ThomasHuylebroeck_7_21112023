@@ -158,18 +158,21 @@
     }
 }
 
-.collapse-container {
-    @media  screen and  (max-width: 425px){
-
-    }
+.title-container{
+    width: 42rem;
 }
 
 .title {
     font-size: 1.5rem;
-    width: 35vw;
+    width: 42rem;
+    max-width: 42rem;
 }
 
 .description-content, .equipement-list {
     font-size: 1.2rem;
-    max-width: 35vw;
+    max-width: 42rem;
+}
+
+.open-collapse {
+    width: 42rem;
 }

@@ -61,7 +61,7 @@ export default function Logement() {
         </div>
         <div className="collapse">
           <Collapse
-            className="title Description-title"
+            className="title-container Description-title"
             title={<h2 className="title">Description</h2>}
             content={
               <div className="description-content">
@@ -71,7 +71,7 @@ export default function Logement() {
           />
 
           <Collapse
-            className="title equipements-title"
+            className="title-container equipements-title"
             title={<h2 className="title">Équipements</h2>}
             content={
               <ul className="equipement-list">

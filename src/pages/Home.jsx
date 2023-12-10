@@ -25,7 +25,7 @@ export default function Home() {
             {/* {width > 425 ? (     //rendu conditionnel if/else */}
                 <h1 className='banner-title'>Chez vous, partout et ailleurs</h1>
             {/* ) : ( */}
-                <h1 className='banner-title'>Chez vous, partout et ailleurs</h1>
+                {/* <h1 className='banner-title'>Chez vous, partout et ailleurs</h1> */}
             {/* )} */}
         </div>
         <section className='home-section'>

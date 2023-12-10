@@ -27,6 +27,10 @@
     font-weight: 400;
     text-align: center;
     @media screen and (max-width: 425px) {
+      text-wrap: wrap;
+      text-align: left;
+      width: 80%;
+      left: 82%;
       top: 60%;
       transform: translate(-73%, -50%);
       text-align: left;
