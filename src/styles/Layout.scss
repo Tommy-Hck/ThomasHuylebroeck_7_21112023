@@ -28,8 +28,9 @@ img {
     font-size: 1.5rem;
     li:hover {
         text-decoration: underline;
-        color: #FF6060; 
+        color: #FF6060;
     }
+
     @media  screen and  (max-width: 430px){
         justify-content: left;
         padding: 0 1.8rem;
@@ -40,12 +41,19 @@ img {
 }
 
 footer {
+    @media  screen and  (max-width: 425px){
+    display: flex;
+    justify-content: center;
+    }
+}
+.footer-container {
     background-color: black;
     color: white;
     text-align: center;
     padding-bottom: 0.5rem;
     @media  screen and  (max-width: 425px){
-        padding: 8% 0;
+        padding: 8% 0; 
+        width: 20rem;
     }
     img {
         object-fit: contain;
