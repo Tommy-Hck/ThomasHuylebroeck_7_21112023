@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from '../assets/logo.svg'
 import '../styles/Layout.scss'
+import { NavLink } from 'react-router-dom'
 
 export default function Navbar() {
   return (
@@ -10,10 +11,10 @@ export default function Navbar() {
         <div className='nav-link'>
             <ul>
                 <li>
-                    <a href='/'>Accueil</a>
+                    <NavLink to='/'>Accueil</NavLink>
                 </li>
                 <li>
-                    <a href='/about'>A propos</a>
+                    <NavLink to='/about'>A propos</NavLink>
                 </li>
 
                 

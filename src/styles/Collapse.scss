@@ -17,9 +17,13 @@
     }
 }
 
+.collapse-container.open {  
+    background-color: #F6F6F6;
+}
 
 .collapse-container {
     margin-bottom: 2rem;
+    border-radius: 10px;
     @media  screen and  (max-width: 425px){
         width: 90%;
         margin: 0.5rem;
