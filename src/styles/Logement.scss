@@ -140,7 +140,8 @@
   width: 50%;
   height: 50%;
   @media screen and (max-width: 425px) {
-    width: 100%;
+    width: 90%;
+    flex-wrap: wrap;
   }
   span {
     color: white;
@@ -148,7 +149,7 @@
     background-color: #ff6060;
     border-radius: 10px;
     @media screen and (max-width: 425px) {
-      padding: 0 0.5rem;
+      padding: 0.1rem 1rem;
       border-radius: 5px;
       font-size: 0.8rem;
     }
