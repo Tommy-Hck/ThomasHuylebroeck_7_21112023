@@ -1,14 +1,8 @@
-// .carrousel {
-//   display: flex;
-//   justify-content: center;
-//   position: relative;
-//   @media screen and (max-width: 425px) {
-//     height: 10rem;
-//     width: 17rem;
-//     padding-bottom: 6rem;
-//   }
-// }
-
+.rightArrow, .leftArrow{
+  display: flex;
+  justify-content: center;
+ color: black;
+}
 .photos {
   width: 100%;
   object-fit: cover;
@@ -172,6 +166,10 @@
   }
 }
 
+.collapse-container{
+  width: 46%;
+}
+
 .collapse {
   display: flex;
   justify-content: space-between;
@@ -183,12 +181,6 @@
 
 .title-container {
   width: 42rem;
-}
-
-.title {
-  font-size: 1.5rem;
-  width: 42rem;
-  max-width: 42rem;
 }
 
 .description-content,

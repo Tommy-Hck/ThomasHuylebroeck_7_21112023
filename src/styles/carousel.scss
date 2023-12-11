@@ -9,8 +9,26 @@
     }
   }
 
-  .arrow {
-    position: absolute;
-    width: 8rem;
-    cursor: pointer;
+  .leftArrow {
+    width: 3.5rem;
+  }
+
+  .rightArrow {
+    width: 3.5rem;
+  }
+
+  .picture{
+    width: 100%;
+    object-fit: cover;
+    height: 20rem;
+    border-radius: 1.5rem;
+      @media screen and (max-width: 425px) {
+          width: 16rem;
+          height: 16rem;
+        border-radius: 10px;
+  }
+  }
+
+  .compteur {
+    width: 2.5rem;
   }

@@ -9,11 +9,12 @@
         color: white;
         @media  screen and  (max-width: 425px){
             font-size: 1rem;
+            display: flex;
+            align-items: center;
         }
     }
     @media  screen and  (max-width: 425px){
         padding: 0 0.8rem;
-        justify-content:flex-start;
     }
 }
 
@@ -30,7 +31,7 @@
     }
 }
 
-.arrow {
+.collapse-arrow {
     cursor: pointer;
     width: 1.6rem;
     height: 1.2rem;
@@ -41,11 +42,10 @@
         display: inline;
         width: 1rem;
         height: 1rem;
-        color: black;
     }
 }
 
-.arrow-down {
+.collapse-arrow-down {
     cursor: pointer;
     width: 1.6rem;
     height: 1.2rem;
@@ -55,8 +55,6 @@
     @media  screen and  (max-width: 425px){
         width: 1rem;
         height: 1rem;
-        display: inline;
-        color: black;
     }
 }
 
@@ -89,4 +87,3 @@
     }
     
 }
-

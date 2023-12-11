@@ -15,11 +15,11 @@ const MenuDeroulant = ({title, content}) => {
       <div className={`collapse-container ${open ? 'open' : ''}`}>
         {/* flèche pour activer/désactiver le menu */}
         <div className='collapse-header'>
-            <div>{title}</div>
+            <h2 className="collapse-title">{title}</h2>
             {open ? (
-              <img className="arrow" onClick={toggleMenu} src={Arrow} alt="flèche"/>
+              <img className="collapse-arrow" onClick={toggleMenu} src={Arrow} alt="flèche"/>
             ):(
-              <img className="arrow-down" onClick={toggleMenu} src={Arrow} alt="flèche"/>
+              <img className="collapse-arrow-down" onClick={toggleMenu} src={Arrow} alt="flèche"/>
             )  
             }
           
@@ -29,7 +29,7 @@ const MenuDeroulant = ({title, content}) => {
         {/* le contenu du menu est rendu conditionnellement en fonction de l'état */}
         {open && (
           <div className="collapse-content">
-          <p className="collapse-text">{content}</p>
+          <div className="collapse-text">{content}</div>
         </div>
         )}
         </div>

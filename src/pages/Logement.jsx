@@ -6,7 +6,7 @@ import "../styles/Logement.scss";
 import greyStar from "../assets/etoileGrise.png";
 import redStar from "../assets/etoileRouge.png";
 import Collapse from "../components/collapse";
-import Carousel from "../../components/Carousel"
+import Carousel from "../components/Carousell"
 
 function Logement() {
   const navigate = useNavigate()
@@ -35,17 +35,12 @@ function Logement() {
           equipments,
           tags
         }) => (
-    <main className="main">
+    <main key={id} className="main">
       <div className="carousel">
-        <Carousel className="picture-container">
-        <img
-          className="photos"
-          src={pictures}
-          alt="visuel du logement"
-        />
+        <Carousel pictures={pictures}>
         </Carousel>
-        <bouton></bouton>
-        <bouton></bouton>
+        {/* <button>{previousPicture}</button>
+        <button>{nextPicture}</button> */}
       </div>
 
       <section className="description-container">
@@ -64,7 +59,7 @@ function Logement() {
           </div>
           <div className="taga">
             {tags.map((tag) => (
-              <span key={tag.length}>{tag}</span>
+              <span key={tag}>{tag}</span>
             ))}
           </div>
 
@@ -83,7 +78,7 @@ function Logement() {
         <div className="collapse">
           <Collapse
             className="title-container Description-title"
-            title={<h2 className="title">Description</h2>}
+            title={"Description"}
             content={
               <div className="description-content">
                 {description}
@@ -93,7 +88,7 @@ function Logement() {
 
           <Collapse
             className="title-container equipements-title"
-            title={<h2 className="title">Équipements</h2>}
+            title={"Équipements"}
             content={
               <ul className="equipement-list">
                 {equipments.map((equipment, index) => (
