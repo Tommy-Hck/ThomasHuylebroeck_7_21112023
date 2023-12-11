@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import styles from "../styles/carousel.scss"
+import  "../styles/carousel.scss"
 import leftArrow from "../assets/gaucheCarousel.png"
 import rightArrow from "../assets/droiteCarousel.png"
 
@@ -43,7 +43,7 @@ function Logement({pictures}) {
                             />
                     )}
                     {index === current && length > 1 && (
-                        <div className={styles.compteur}>
+                        <div className="compteur">
                             {/* le compteur affiche la position actuelle par rapport au total */}
                             {current + 1}/{length}
                             {/* compteur actif uniquement s'il y a au moins une autre photo à afficher */}
