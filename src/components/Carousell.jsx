@@ -24,15 +24,11 @@ function Logement({pictures}) {
     return (
         <div className="carousel">
             {length > 1 && (
-        <button className={styles.leftArrow}>
-          <img className="leftArrow" onClick={previousPicture} src={leftArrow} alt="flèche gauche" />
-        </button>
+          <img className="left-arrow" onClick={previousPicture} src={leftArrow} alt="flèche gauche" />
         
             )}
             {length > 1 && (
-                <button className={styles.rightArrow}>
-                    <img onClick={nextPicture} src={rightArrow} alt="flèche droite" />
-                </button>
+                    <img className="right-arrow" onClick={nextPicture} src={rightArrow} alt="flèche droite" />
                 )}
 
         {pictures.map((image, index) => {
@@ -43,7 +39,7 @@ function Logement({pictures}) {
                         <img
                             src={image}
                             alt="Visuel du logement"
-                            className={styles.picture}
+                            className="carousel-picture" 
                             />
                     )}
                     {index === current && length > 1 && (

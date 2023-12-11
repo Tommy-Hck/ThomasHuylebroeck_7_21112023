@@ -1,7 +1,7 @@
-.carrousel {
+.carousel {
     display: flex;
     justify-content: center;
-    position: relative;
+    width: 100%;
     @media screen and (max-width: 425px) {
       height: 10rem;
       width: 17rem;
@@ -9,19 +9,37 @@
     }
   }
 
-  .leftArrow {
+  .left-arrow {
     width: 3.5rem;
+    height: 4rem;
+    position: absolute;
+      top: 35rem;
+      left: 7rem;
+    color: black;
+    @media screen and (max-width: 425px) {
+      width: 1.5rem;
+      height: 1.5rem;
+      position: absolute;
+      top: 11rem;
+      left: 1.8rem;
+}
   }
 
-  .rightArrow {
+  .right-arrow {
     width: 3.5rem;
+    height: 4rem;
+    position: absolute;
+      top: 35rem;
+      left: 78rem;
+    @media screen and (max-width: 425px) {
+      width: 1.5rem;
+      height: 1.5rem;
+      position: absolute;
+      top: 11rem;
+      left: 15.5rem;
+}
   }
-
-  .picture{
-    width: 100%;
-    object-fit: cover;
-    height: 20rem;
-    border-radius: 1.5rem;
+  .carousel-picture{
       @media screen and (max-width: 425px) {
           width: 16rem;
           height: 16rem;

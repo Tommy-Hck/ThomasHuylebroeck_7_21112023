@@ -12,7 +12,7 @@
     object-fit: cover;
     width: 100%;
     height: auto;
-    border-radius: 0.5rem;
+    border-radius: 20px;
     filter: contrast(1.2) brightness(0.8);
 }
 
@@ -53,4 +53,8 @@
         width: 18rem;
         overflow: hidden;
     }
+}
+
+.collapse-container {
+    width: 80rem !important;
 }
