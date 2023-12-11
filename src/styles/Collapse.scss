@@ -38,6 +38,10 @@
     animation: inverso 0.5s forwards;
     margin-right: 0.5rem;
     @media  screen and  (max-width: 425px){
+        display: inline;
+        width: 1rem;
+        height: 1rem;
+        color: black;
     }
 }
 
@@ -48,6 +52,12 @@
     object-fit: contain;
     animation: rotate 0.5s forwards;
     margin-right: 0.5rem;
+    @media  screen and  (max-width: 425px){
+        width: 1rem;
+        height: 1rem;
+        display: inline;
+        color: black;
+    }
 }
 
 .collapse-text {

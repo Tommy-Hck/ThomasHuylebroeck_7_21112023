@@ -1,48 +1,69 @@
 import React from "react";
-import { useParams, Link } from "react-router-dom";
+import { useEffect } from 'react'
+import { useParams, useNavigate } from "react-router-dom";
 import homeData from "../assets/logements.json";
 import "../styles/Logement.scss";
 import greyStar from "../assets/etoileGrise.png";
 import redStar from "../assets/etoileRouge.png";
 import Collapse from "../components/collapse";
+import Carousel from "../../components/Carousel"
 
-export default function Logement() {
+function Logement() {
+  const navigate = useNavigate()
   const { id } = useParams();
-  const currentLogement = homeData.find((logement) => logement.id === id);
-  console.log("id", id);
-
-  if (!currentLogement) {
-    return <Link to="/Error"></Link>;
-  }
+  const currentLogement = homeData.filter((logement) => logement.id === id);
 
   let array = [1, 2, 3, 4, 5];
 
+  useEffect(() => {
+    if (currentLogement.length === 0) {
+      navigate('/Error');
+    }
+  })
+
   return (
+    <div>
+      {currentLogement.map(
+        ({
+          id,
+          title,
+          pictures,
+          description,
+          host,
+          rating,
+          location,
+          equipments,
+          tags
+        }) => (
     <main className="main">
-      <div className="carrousel">
+      <div className="carousel">
+        <Carousel className="picture-container">
         <img
           className="photos"
-          src={currentLogement.pictures[0]}
+          src={pictures}
           alt="visuel du logement"
         />
+        </Carousel>
+        <bouton></bouton>
+        <bouton></bouton>
       </div>
 
       <section className="description-container">
         <div className="info">
           <div className="city-aera">
-            <h1 className="quartier">{currentLogement.title}</h1>
-            <p className="city">{currentLogement.location}</p>
+            <div className="quartier">{title}</div>
+            <p className="city">{location}</p>
           </div>
           <div className="host">
-            <p className="owner">{currentLogement.host.name}</p>
+            <p className="owner">{host.name}</p>
             <img
               className="host-picture"
-              src={currentLogement.host.picture}
+              src={host.picture}
               alt="hôte"
             />
           </div>
           <div className="taga">
-            {currentLogement.tags.map((tag) => (
+            {tags.map((tag) => (
               <span key={tag.length}>{tag}</span>
             ))}
           </div>
@@ -53,7 +74,7 @@ export default function Logement() {
               <img
                 key={index}
                 className="star"
-                src={index <= currentLogement.rating ? redStar : greyStar}
+                src={index <= rating ? redStar : greyStar}
                 alt="star"
               />
             ))}
@@ -65,7 +86,7 @@ export default function Logement() {
             title={<h2 className="title">Description</h2>}
             content={
               <div className="description-content">
-                {currentLogement.description}
+                {description}
               </div>
             }
           />
@@ -75,7 +96,7 @@ export default function Logement() {
             title={<h2 className="title">Équipements</h2>}
             content={
               <ul className="equipement-list">
-                {currentLogement.equipments.map((equipment, index) => (
+                {equipments.map((equipment, index) => (
                   <li key={index}>{equipment}</li>
                 ))}
               </ul>
@@ -84,5 +105,9 @@ export default function Logement() {
         </div>
       </section>
     </main>
+        )
+      )}
+      </div>
   );
 }
+export default Logement

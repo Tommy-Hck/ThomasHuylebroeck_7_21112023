@@ -15,7 +15,7 @@ const MenuDeroulant = ({title, content}) => {
       <div className={`collapse-container ${open ? 'open' : ''}`}>
         {/* flèche pour activer/désactiver le menu */}
         <div className='collapse-header'>
-            <h2>{title}</h2>
+            <div>{title}</div>
             {open ? (
               <img className="arrow" onClick={toggleMenu} src={Arrow} alt="flèche"/>
             ):(
