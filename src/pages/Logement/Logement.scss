@@ -166,7 +166,7 @@
   display: flex;
   justify-content: space-between;
   .collapse-header{
-    width: 45rem;
+    width: 38vw;
   }
   @media screen and (max-width: 425px) {
     flex-direction: column;
@@ -187,7 +187,7 @@
 }
 
 .description-content {
-  width: 44rem;
+  width: 37vw;
   font-size: 1.3rem;
   line-height: 1.7rem;
   @media screen and (max-width: 425px) {
@@ -197,7 +197,7 @@
 }
 
 .open-collapse {
-  max-width: 40rem;
+  max-width: 38vw;
   margin-top: 1.5rem;
   @media screen and (max-width: 425px) {
   }
