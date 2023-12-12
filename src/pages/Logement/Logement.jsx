@@ -1,13 +1,13 @@
 import React from "react";
 import { useEffect } from 'react'
 import { useParams, useNavigate } from "react-router-dom";
-import homeData from "../assets/logements.json";
-import "../styles/Logement.scss";
-import greyStar from "../assets/etoileGrise.png";
-import redStar from "../assets/etoileRouge.png";
-import Collapse from "../components/collapse";
-import Carousel from "../components/Carousell"
-import "../styles/base.scss"
+import homeData from "../../assets/logements.json";
+import "../Logement/Logement.scss";
+import greyStar from "../../assets/etoileGrise.png";
+import redStar from "../../assets/etoileRouge.png";
+import Collapse from "../../components/Collapse/collapse";
+import Carousel from "../../components/Carousel/Carousell"
+import "../../styles/base.scss"
 
 function Logement() {
   const navigate = useNavigate()

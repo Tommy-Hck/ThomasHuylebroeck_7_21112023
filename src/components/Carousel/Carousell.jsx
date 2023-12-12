@@ -1,8 +1,8 @@
 import React from "react";
 import { useState } from "react";
-import  "../styles/carousel.scss"
-import leftArrow from "../assets/gaucheCarousel.png"
-import rightArrow from "../assets/droiteCarousel.png"
+import  "../Carousel/carousel.scss"
+import leftArrow from "../../assets/gaucheCarousel.png"
+import rightArrow from "../../assets/droiteCarousel.png"
 
 
 function Logement({pictures}) {

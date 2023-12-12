@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Arrow from '../assets/arrow.png'
-import '../styles/Collapse.scss'
+import Arrow from '../../assets/arrow.png'
+import '../Collapse/Collapse.scss'
 
 const MenuDeroulant = ({title, content}) => {
     // j'utilise le state pour gérer l'état du menu

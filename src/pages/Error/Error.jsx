@@ -1,7 +1,7 @@
 import React from 'react'
-import "../styles/Error.scss"
+import "../Error/Error.scss"
 import { Link } from 'react-router-dom'
-import '../styles/base.scss'
+import '../../styles/base.scss'
 
 export default function Error() {
   return (

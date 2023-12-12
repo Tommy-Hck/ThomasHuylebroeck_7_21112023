@@ -1,10 +1,10 @@
 import React from 'react'
-import Banner from '../assets/kalen-emsley-Bkci_8qcdvQ-unsplash 2 (1).png'
-import "../styles/About.scss"
-import Collapse from '../components/collapse'
-import Data from '../assets/about.json'
-import '../styles/Banner.scss'
-import '../styles/base.scss'
+import Banner from '../../assets/kalen-emsley-Bkci_8qcdvQ-unsplash 2 (1).png'
+import "../About/About.scss"
+import Collapse from '../../components/Collapse/collapse'
+import Data from '../../assets/about.json'
+import '../../styles/Banner.scss'
+import '../../styles/base.scss'
 
 export default function About() {
   return (
