@@ -1,62 +1,61 @@
 .carousel {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    @media screen and (max-width: 425px) {
-      height: 10rem;
-      width: 17rem;
-      padding-bottom: 6rem;
-    }
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  @media screen and (max-width: 425px) {
+    height: 10rem;
+    width: 17rem;
+    padding-bottom: 6rem;
   }
-
-  .left-arrow {
-    width: 3.5rem;
-    height: 4rem;
-    position: absolute;
-      top: 22rem;
-      left: 14rem;
-    @media screen and (max-width: 425px) {
-      width: 1.5rem;
-      height: 1.5rem;
-      position: absolute;
-      top: 11rem;
-      left: 2.5rem;
 }
-  }
 
-  .right-arrow {
-    width: 3.5rem;
-    height: 4rem;
+.left-arrow {
+  width: 3.5rem;
+  height: 4rem;
+  position: absolute;
+  top: 38vh;
+  left: 12vw;
+  @media screen and (max-width: 425px) {
+    width: 1.5rem;
+    height: 1.5rem;
     position: absolute;
-      top: 22rem;
-      left: 101.5rem;
-    @media screen and (max-width: 425px) {
-      width: 1.5rem;
-      height: 1.5rem;
-      position: absolute;
-      top: 11rem;
-      left: 15.5rem;
+    top: 28vh;
+    left: 13vw;
+  }
 }
-  }
-  .carousel-picture{
-    object-fit: cover;
-    width: 80vw;
-    height: 45vh;
-    border-radius: 20px;
-      @media screen and (max-width: 425px) {
-          width: 16rem;
-          height: 16rem;
-        border-radius: 10px;
-  }
-  }
 
-  .compteur {
-    position: absolute;
-    top: 37rem;
-    left: 59rem;
-    font-size: 1.2rem;
-    color: white;
-    @media screen and (max-width: 425px) {
+.right-arrow {
+  width: 3.5rem;
+  height: 4rem;
+  position: absolute;
+  top: 38vh;
+  left: 85vw;
+  @media screen and (max-width: 425px) {
+    width: 1.5rem;
+    height: 1.5rem;
+    top: 28vh;
+    left: 75vw;
+  }
+}
+.carousel-picture {
+  object-fit: cover;
+  width: 80vw;
+  height: 45vh;
+  border-radius: 20px;
+  @media screen and (max-width: 425px) {
+    width: 16rem;
+    height: 16rem;
+    border-radius: 10px;
+  }
+}
+
+.compteur {
+  position: absolute;
+  top: 37rem;
+  left: 59rem;
+  font-size: 1.2rem;
+  color: white;
+  @media screen and (max-width: 425px) {
     visibility: hidden;
-    }
   }
+}
