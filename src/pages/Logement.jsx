@@ -76,7 +76,7 @@ function Logement() {
             ))}
           </div>
         </div>
-        <div className="collapse">
+        <div className="logement-collapse">
           <Collapse
             className="title-container Description-title"
             title={"Description"}
