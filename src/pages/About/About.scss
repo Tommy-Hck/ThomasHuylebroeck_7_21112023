@@ -4,7 +4,7 @@
         height: auto;
         width: auto;
         padding: 0%;
-        margin-bottom: 0.3rem;
+        margin-bottom: 0.8rem;
     }
 }
 
@@ -48,11 +48,11 @@
 
 .collapse-content {
     padding: 0 1.5rem;
-    word-spacing: 0.555rem;
-    font-size: 1.790rem;
+    font-size: 1.7rem;
     width: 70rem;
     @media  screen and  (max-width: 425px){
         padding-left: 1rem;
+        line-height: 1.5rem;
         font-size: 1.2rem;
         margin: 0;
         width: 14rem;

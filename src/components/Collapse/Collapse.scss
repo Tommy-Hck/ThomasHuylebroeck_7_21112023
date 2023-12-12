@@ -20,13 +20,17 @@
 
 .collapse-container.open {  
     background-color: #F6F6F6;
+    padding-bottom: 2%;
+    @media  screen and  (max-width: 425px){
+        margin-bottom: 1rem;
+    }
 }
 
 .collapse-container {
     margin-bottom: 2rem;
     border-radius: 10px;
     @media  screen and  (max-width: 425px){
-        margin: 0.5rem;
+        margin: 0;
     }
 }
 
@@ -59,7 +63,6 @@
 
 .collapse-text {
     color: #FF6060;
-    font-size: 1.8rem;
     @media  screen and  (max-width: 425px){
         font-size: 0.9rem;
     }
