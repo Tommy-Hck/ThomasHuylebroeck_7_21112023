@@ -32,9 +32,10 @@
 }
 
 .collapse-title {
-    width: 70rem;
+    width: 80rem;
     height: 2rem;
     font-size: 1.5rem;
+    font-weight: 300;
     padding: 0 1rem;
     @media  screen and  (max-width: 425px){
         padding: 0;
@@ -53,8 +54,4 @@
         width: 18rem;
         overflow: hidden;
     }
-}
-
-.collapse-container {
-    width: 80rem !important;
 }

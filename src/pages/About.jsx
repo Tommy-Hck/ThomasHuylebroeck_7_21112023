@@ -4,6 +4,7 @@ import "../styles/About.scss"
 import Collapse from '../components/collapse'
 import Data from '../assets/about.json'
 import '../styles/Banner.scss'
+import '../styles/base.scss'
 
 export default function About() {
   return (
@@ -18,7 +19,7 @@ export default function About() {
         {Data.map((rule) =>
           {
             return (
-              <Collapse title={rule.title} content={rule.content} key={rule.id}/>
+              <Collapse className="collapse-about" title={rule.title} content={rule.content} key={rule.id}/>
             )
           }
         )}

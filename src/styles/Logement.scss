@@ -163,6 +163,15 @@
 
 .collapse-container{
   width: 46% !important;
+  @media screen and (max-width: 425px) {
+  width: 55rem;
+  }
+}
+
+.collapse-header {
+  @media screen and (max-width: 425px) {
+  width: 14rem;
+  }
 }
 
 .collapse {
@@ -184,13 +193,21 @@
   max-width: 42rem;
   @media screen and (max-width: 425px) {
     width: 15rem;
+    line-height: 1.3rem;
+    font-size: 1rem;
+    margin: 0;
   }
 }
 
 .equipement-list {
   padding: 0;
+  @media screen and (max-width: 425px) {
+  }
 }
 
 .open-collapse {
   width: 42rem;
+  margin-top: 1.5rem;
+  @media screen and (max-width: 425px) {
+  }
 }

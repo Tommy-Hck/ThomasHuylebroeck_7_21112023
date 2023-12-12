@@ -3,6 +3,7 @@ import banner from '../assets/bannière.png'
 import '../styles/Home.scss'
 import homeData from '../assets/logements.json'
 import '../styles/Banner.scss'
+import '../styles/base.scss'
 
 export default function Home() {
     // const [width, setWidth] = useState(window.innerWidth) //hook changement d'état

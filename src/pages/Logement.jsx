@@ -7,6 +7,7 @@ import greyStar from "../assets/etoileGrise.png";
 import redStar from "../assets/etoileRouge.png";
 import Collapse from "../components/collapse";
 import Carousel from "../components/Carousell"
+import "../styles/base.scss"
 
 function Logement() {
   const navigate = useNavigate()
